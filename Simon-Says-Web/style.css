@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    margin: 2rem 0 1rem 0;
+    font-size: 3rem;
+    font-weight: 900;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+h3 {
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+.high-score {
+    margin: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+}
+
+.high-score span {
+    color: gold;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 210px);
+    grid-gap: 1rem;
+    place-items: center;
+    place-content: center;
+    margin: 1rem auto;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 6px solid white;
+    border-radius: 20px;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+}
+
+.green {
+    background-color: rgb(12, 184, 12);
+    border-top-left-radius: 100%;
+}
+
+.pink {
+    background-color: rgb(248, 57, 57);
+    border-top-right-radius: 100%;
+}
+
+.orange {   
+    background-color: rgb(249, 249, 89);
+    border-bottom-left-radius: 100%;
+}
+
+.blue {
+    background-color: rgb(68, 68, 232);
+    border-bottom-right-radius: 100%;
+}
+
+.flash {
+    background-color: white !important;
+}
+
+.danger {
+    background-color: red;
+    transition: background-color 0.3s;
+}
+/* Previous styles remain the same */
+
+.instructions {
+    margin: 3rem auto;
+    padding: 1.5rem;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    text-align: left;
+}
+
+.instructions h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: gold;
+    text-align: center;
+}
+
+.instructions ol {
+    padding-left: 1.5rem;
+}
+
+.instructions li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}

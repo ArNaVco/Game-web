@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="simon-says-game">
+      <h1>Simon Game</h1>
+      <h3>Press any key to start the Game.</h3>
+      <div class="high-score">High Score: <span id="highScore">0</span></div>
+      <div class="container">
+        <div class="box green" id="green"></div>
+        <div class="box pink" id="pink"></div>
+        <div class="box orange" id="orange"></div>
+        <div class="box blue" id="blue"></div>
+      </div>
+      <div class="instructions">
+        <h2>How to Play</h2>
+        <ol>
+          <li>Press any key to start.</li>
+          <li>Memorize the sequence of flashes.</li>
+          <li>Click the buttons in the same order.</li>
+          <li>Each level adds one more step to the sequence.</li>
+          <li>If you make a mistake, the game ends.</li>
+        </ol>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
